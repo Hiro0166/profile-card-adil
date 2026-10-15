@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111827;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 540px;
+    background: #ffffff;
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Banner video */
+.banner {
+    width: 100%;
+    height: 145px;
+    overflow: hidden;
+    background: #1e293b;
+}
+
+.banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Isi profil */
+.profile-content {
+    padding: 0 24px 24px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: -48px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 23px;
+    color: #111827;
+    margin-top: 8px;
+}
+
+.username {
+    color: #64748b;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+/* Informasi profil */
+.details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.details p {
+    background: #f1f5f9;
+    padding: 11px;
+    border-radius: 9px;
+    color: #334155;
+    font-size: 12px;
+}
+
+.details i {
+    color: #0ea5e9;
+    margin-right: 6px;
+    width: 14px;
+}
+
+/* Media sosial netral */
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.social {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #334155;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+}
+
+.social i {
+    font-size: 18px;
+}
+
+.social:hover {
+    transform: translateY(-3px);
+    background: #e2e8f0;
+}
+
+/* Tampilan HP */
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    .banner {
+        height: 125px;
+    }
+
+    .profile-content {
+        padding: 0 14px 18px;
+    }
+
+    .profile-img {
+        width: 85px;
+        height: 85px;
+        margin-top: -43px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin: 16px 0;
+    }
+
+    .social-media {
+        gap: 7px;
+    }
+
+    .social {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px 4px;
+        font-size: 11px;
+    }
+
+    .social i {
+        font-size: 18px;
+    }
+}
